@@ -41,6 +41,10 @@ async function getInterfaceList(config){
     errLog('调用 /api/interface/list 失败，请检查网络或 token')
   }
 
+  if (result.data.errcode !== 0) {
+    errLog(`调用 /api/interface/list 失败，请检查categoryId，errmsg: ${result.data.errmsg}`)
+  }
+
   return result.data.data.list;
 }
 

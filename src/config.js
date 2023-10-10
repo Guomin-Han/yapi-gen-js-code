@@ -10,10 +10,10 @@ module.exports = {
       return p.replace(/[^a-zA-Z0-9\_]+/g, '')
     })
     if (!apipaths.length) {
-      console.log(`由于该api路径${apipath}为根路径, 请输入请求方法名称:`);
+      console.log(`由于该api路径为根路径, 请输入请求方法名称:`);
       return readlineSync.question().replace(/[^a-zA-Z0-9\_]+/g, '')
     }
-    return categoryId ? apipaths[length - 1] : apipaths.join('_')
+    return categoryId ? apipaths[apipaths.length - 1] : apipaths.join('_')
   },
   server: '',
   token: '',
