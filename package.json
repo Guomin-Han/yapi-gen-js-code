@@ -1,0 +1,21 @@
+{
+  "name": "@gmin/yapi-gen-js-code",
+  "version": "0.0.2",
+  "description": "根据 YApi 的接口定义生成 javascript 的请求函数，适用于 PanJiaChen/vue-admin-template 及其衍生项目",
+  "main": "index.js",
+  "bin": {
+    "yapi-gen-js-code": "./bin/yapi-gen"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "json5": "^2.1.0",
+    "readline-sync": "^1.4.10"
+  },
+  "repository": "git@github.com:Guomin-Han/yapi-gen-js-code.git",
+  "keywords": [
+    "yapi-gen-js-code",
+    "yapi"
+  ]
+}
